@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: #e4f1fe       ;
+        }
+        #navbar{
+            background-color: #34495e       ;
+            position: fixed;
+            top: 0;
+            padding: 0.7%;
+            width: 100%;
+        }
+        .navItem{
+            text-decoration: none;
+            color: #FFFFFF;
+            display: block;
+            font-size: 1.1em;
+            font-weight: 600;
+            padding: 10px 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navContainer:hover{
+            background-color: #D8AED3;
+            border-radius: 8px;
+        }
+        #container{
+            display: flex;
+            align-items: stretch;
+            height: 80vh; 
+            color: #34495e ;
+            margin-top: 5%;
+        }
+        iframe{
+            border: none;
+            width:65%;
+            overflow: hidden;
+            
+        }
+
+        #aside1,#aside2{
+            flex: 0 0 15%; 
+            background-color: #e4f1fe         ; 
+            padding: 20px; 
+        }
+        #aside1>p:hover{
+            box-shadow: -5px 10px 8px #9c9c9c;
+            
+        }
+        #aside1>p{
+            padding: 5px;
+            
+        }
+        #footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4A90E2   ;
+        }
+        p{
+            font-weight: bold;
+        }
+        img{
+            width: 25%;
+            height: 5%;
+        }
+        #links{
+            gap: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" style="display: flex; gap: 6%; justify-content: center;">
+        <span class="navContainer"> <a class="navItem" href="./home.html"    target="mainframe"> Home   </a></span>
+        <span class="navContainer"> <a class="navItem" href="./hobbies.html" target="mainframe"> Hobbies </a></span>
+        <span class="navContainer"> <a class="navItem" href="./skillIntro.html" target="mainframe"> Skills </a></span>
+        <span class="navContainer"> <a class="navItem" href="./slider.html" target="mainframe"> Images </a></span>
+        <span class="navContainer"> <a class="navItem" href="./birthdayImg.html" target="mainframe"> Birthday </a></span>
+        <span class="navContainer"> <a class="navItem" href="./contact.html" target="mainframe"> Contact Me </a></span>
+    </div>
+    <div id="container">
+        <div id="aside1">
+            <p>Social Media</p>
+            <div id="links">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./resources/icons/facebook.png"></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-abobakr/" target="_blank"><img src="./resources/icons/linkedin.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./resources/icons/instagram.png"></a>
+            </div>
+        </div>
+        <iframe src="home.html" scrolling="" name="mainframe"></iframe>
+        <div id="aside2">
+            <p>“The greatest glory in living lies not in never falling, but in rising every time we fall.”<br>-Nelson Mandela</p>
+            <br><br>
+            <p>“The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.” <br>- Helen Keller</p>
+        </div>
+    </div>
+    <div id="footer"> 
+        <p>
+            copyrights  &copy; are reserved
+        </p>
+    </div>
+</body>
+</html>

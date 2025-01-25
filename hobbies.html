@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        span#title{
+            background-color: #4f7094;
+            color: #e4f1fe; 
+        }
+        span,div>p{
+            background-color: #8dc6ff;
+            padding: 1.5%;
+            margin-right: 2%;
+            margin-bottom: 3%;
+            border-radius: 5px;
+        }
+        .hobbies{
+            width: 20%;
+            height: auto;
+        }
+        div#hbImgs img:hover{
+            scale:120%;
+        }
+        div#hbImgs>div{
+            text-align: center;
+        }
+        #hbContainer{
+            display: flex; 
+            gap: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1><span id="title">Hobbies</span></h1>
+    <div id="hbImgs">
+        <div id="hbContainer">
+            <div>
+                <img src="./resources/hobbies/joystick.png" class="hobbies" id="img1">
+                <p>Video Games</p>
+            </div>
+
+            <div>
+                <img src="./resources/hobbies/theater.png" class="hobbies" id="img2">
+                <p>Watching Movies</p>
+            </div>
+            <div>
+                <img src="./resources/hobbies/watching.png" class="hobbies" id="img3">
+                <p>Watching Football</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
